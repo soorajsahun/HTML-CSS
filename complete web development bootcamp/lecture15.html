@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of css selectors</title>
+    <style>
+        /* All 'p' tags paragraph will be in orange color even in 'div' tag also*/
+        /* Element Selector */
+        p{
+            border: 2px solid rgb(34, 36, 34);
+        }/* Element Selector */
+        p{
+            color: orange;
+        }
+        /* Id selector */
+        #redElement{
+            color: red;
+        }
+        /* Class selector */
+        .bgBlue{
+            background-color: royalblue;
+        }/* Class selector */
+        .bgGreen{
+            background-color: seagreen;
+        }
+        /* Grouping selector */
+        footer,span{
+            color: cyan;
+            background-color: rgb(180, 226, 14);
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS selectors</h3>
+    <p class="bgGreen">This is a simple paragraph to demonstrate css selectors</p>
+    <p id="redElement" class="bgBlue">This is another simple paragraph to demonstrate css selectors</p>
+    <span>This is a span</span>
+    <div>
+        <!-- div ke undar ka bhi paragraph color ho jayega -->
+        <p class="bgGreen">This is  simple paragraph inside div to demonstrate css selectors</p>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+</html>

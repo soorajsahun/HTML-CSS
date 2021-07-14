@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tags</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <!-- form->tag attribute<-action is used to the send the data of form tag to backend which is in php-->
+    <form action="backend.php"></form>
+    <!-- 'label' tag is used if we want to select 'Name' title -->
+    <label for="name">Name:</label>
+    <!-- for wala'name' is to take reference in which we want to give label 'id' section -->
+    <!-- 'div' tag is block element(Which takes entire line) -->
+     <div>
+         <!-- 'input' tag is inline element(which takes only that much space jitna required) -->
+        <input type="text" name="myName" id="name">
+    </div>
+    <br>
+    <div>
+        Role:<input type="text" name="myRole" >
+    </div>
+    <br>
+    <div>
+        Email: <input type="email" name="myEmail">
+    </div>
+    <br>
+    <div>
+        Date:<input type="date" name="myDate" >
+    </div>
+    <br>
+    <div>
+        Bonus: <input type="number" name="myBonus" >
+    </div>
+    <br>
+    <!-- checked is for default check -->
+    <div>
+        Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+    </div>
+    <br>
+    <div>
+        Gender: Male <input type="radio" name="myGender">
+        Female <input type="radio" name="myGender">
+        Others <input type="radio" name="myGender">
+    </div>
+    <br>
+    <div>
+        Write about yourself:<br><textarea name="myText" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <label for="car"></label>
+    <div>
+        Car:<select name="myCar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf" selected>Swift</option>
+        </select>
+    </div>
+    <br> 
+    <div>
+        <input type="submit" value="Submit Now">
+
+        <input type="reset" value="Reset Now">
+    </div>
+</body>
+</html>

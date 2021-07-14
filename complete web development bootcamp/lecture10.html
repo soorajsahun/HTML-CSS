@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ids and classes in HTML</title>
+</head>
+<body>
+    <h3>Ids and classes tutorial</h3>
+    <!-- 'id' name ka reference leke hum jscript me us particular element me changes kr skte hai (id ek element ke liye unique hoti hai )-->
+    <!-- 'class' me hum bahot properties ko daal ke multiple elements ko use krne de skte hai by taking refernce of class ka naam (class multiple element k liye hoti hai)-->
+    <div id="mainBox" class="redBg blackBorder">
+        this is mainbox
+    </div>
+    <span class="redBg"></span>
+    <!-- Emmet -->
+    <!-- . is for class and # is for id -->
+    <!-- span.blueBG + enter you will get below statement -->
+    <span class="blueBG"></span>
+    <!-- span#mainSpan + enter you will get below statement -->
+    <span id="mainSpan"></span>
+    <!-- div.redBg.blackBorder.anotherClass +enter you will get below statement  -->
+    <div class="redBg blackBorder anotherClass"></div>
+    <!-- .blackBackground + eneter you will get below statement as Emmet takes div tag as default -->
+    <div class="blackBackground"></div>
+
+    <!-- Creating multiple elements using Emmet -->
+    <!-- span.myClass.myClass2.myClass3*4 + enter to print 4 similar elements using Emmet -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+</body>
+</html>
